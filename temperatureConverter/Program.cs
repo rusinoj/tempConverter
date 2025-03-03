@@ -90,14 +90,14 @@ namespace temperatureConverter
 
             return;
         }
-        private static void convertTemp(double intNumToConvert)
+        private static void convertTemp(double dblNumToConvert)
         {
             double celsius = 0;
             double fahrenheit = 0;
             try
             {
-                fahrenheit = (intNumToConvert * 9 / 5) + 32;
-                celsius = (intNumToConvert - 32) * 5 / 9;
+                fahrenheit = (dblNumToConvert * 9 / 5) + 32;
+                celsius = (dblNumToConvert - 32) * 5 / 9;
             }
             catch (ArithmeticException e)
             {
